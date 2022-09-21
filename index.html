@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gelato Ice</title>
+        <link rel="stylesheet" href="./styles.css">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="./About.html">>About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </head>
+    <body>
+        <h1>Gelato Ice</h1>
+        <div id="Menu"><h2>Menu</h2>
+            <ul>
+                <li>Vanilla</li>
+                    <img src="https://www.saudereggs.com/content/uploads/2018/05/sweet-vanilla-bean-gelato-1.jpg" width="500" alt="Vanilla gelato">
+                <li>Chocolate</li>
+                    <img src="https://italianchef.com/wp-content/uploads/2016/07/ChocolateGelato.jpg" width="500" alt="Chocolate gelato">
+                <li>Strawberry</li>
+                    <img src="https://andreasrecipes.com/wp-content/uploads/2012/05/Gelato_strawberry-2-500x375.jpg" width="500" alt="Strawberry gelato">
+                <li>Lemon</li>
+                    <img src="https://www.askchefdennis.com/wp-content/uploads/2012/02/lemon-gelato-with-scoop-10.jpg" width="500" alt="Lemon gelato">
+                <li>Blueberry</li>
+                    <img src="https://www.abakershouse.com/wp-content/uploads/2013/07/blueberry-gelato-720x540.jpg" width="500" alt="Blueberry gelato">
+                <li>Pistachio</li>
+                <img src="https://www.donnafugata.it/wp-content/uploads/2016/09/gelato_pistacchio.jpg" width="500" alt="Pistachio gelato">
+            </ul>
+        </div>
+        <div id="Prices"> <h2>Prices (per scoop)</h2>
+            <ol>
+                <li>One scoop - $2.00</li>
+                <li>Two scoops - $4.00</li>
+                <li>Three scoops - $5.00</li>
+            </ol>
+        </div>
+        <div id="Order"><h2>Order Here!</h2>
+                <form action="#send" method="POST">
+                    <section class="name">
+                        <label for="cust_name">Name</label>
+                            <br>
+                            <input type="text" name="cust__name" id="cust_name" required>
+                    </section>
+                    <section class="address">
+                        <label for="cust_address">Address</label>
+                            <br>
+                            <input type="text" name="cust_address" id="cust_address" required>
+                    </section>
+                    <section class="city">
+                        <label for="cust_city">City</label>
+                            <br>
+                            <input type="text" name="cust_city" id="cust_city" required>
+                    </section>
+                    <section class="state">
+                        <label for="cust_state">State</label>
+                            <br>
+                            <input type="text" name="cust_state" id="cust_state" required>
+                    </section>
+                    <section class="zipcode">
+                        <label for="cust_zip">Zip Code</label>
+                            <br>
+                            <input type="number" name="cust_zip" id="cust_zip" required pattern="[0-9]{5}">
+                    </section>
+                    <section class="phone">
+                        <label for="cust_phone">Phone Number (numbers only)</label>
+                            <br>
+                            <input type="number" name="cust_phone" id="cust_phone" required pattern="[0-9]{10}">
+                    </section>
+                    <section class="order_flavor">
+                        <p>Which flavor(s) do you want?</p>
+                                <label for="vanilla">Vanilla</label>
+                                    <input type="checkbox" id="vanilla" name="flavor" value="vanilla">
+                                <label for="chocolate">Chocolate</label>
+                                    <input type="checkbox" id="chocolate" name="flavor" value="chocolate">
+                                <label for="strawberry">Strawberry</label>
+                                    <input type="checkbox" id="strawberry" name="flavor" value="strawberry">
+                                <label for="lemon">Lemon</label>
+                                    <input type="checkbox" id="lemon" name="flavor" value="lemon">
+                                <label for="blueberry">Blueberry</label>
+                                    <input type="checkbox" id="blueberry" name="flavor" value="blueberry">
+                                <label for="pistachio">Pistachio</label>
+                                    <input type="checkbox" id="pistachio" name="flavor" value="pistachio">
+                    </section>
+                    <br>
+                    <section class="order_scoop">
+                        <label for="num_scoops">How many scoops do you want?</label>
+                            <input type="number" id="num_scoops" name="num_scoops" min="1" max="3" required>
+                    </section>
+                    <br>
+                    <section class="special_request">
+                        <label for="special_request">Special Requests?</label>
+                            <br>
+                            <textarea id="special_request" name="special_request" row="5" cols="30"></textarea>
+                    </section>
+                    <section class="payment_info"><h3>Payment Infomation</h3>
+                        <div id="card_num">
+                            <label for="card_num">Card Number (no spaces)</label>
+                            <br>
+                            <input type="number" name="card_num" id="card_num" required pattern="[0-9]{14-16}">
+                        </div>
+                        <div id="card_ex">
+                            <label for="card_ex">Expiration Date</label>
+                                <br>
+                                <input type="number" name="card_ex" id="card_ex" required>
+                        </div>
+                        <div id="card_sec">
+                            <label for="card_sec">Security Code</label>
+                                <br>
+                                <input type="number" name="card_sec id="card_sec" required pattern="[0-9]{3}">
+                        </div>
+                    </section>
+                    <br>
+                    <section class="submission">
+                        <input type="submit" value="Submit Order">
+                    </section>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+body{
+    background-image: url('https://images.pexels.com/photos/1905054/pexels-photo-1905054.jpeg?cs=srgb&dl=pexels-loc-dang-1905054.jpg&fm=jpg');
+    font-family: 'Courier New', Courier, monospace;
+    color:black
+}
+
+input[type="checkbox"]
+{
+    vertical-align:middle;
+}
+
+#about_gelato{
+    font-family: helvetica;
+}
+
+form{
+    background-color: pink;
+}
+
+a:hover{
+    color:red;
+}
